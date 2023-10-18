@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+     margin: 0;
+     font-family: 'Tilt Neon', sans-serif;
+     transition: all 1s;
+}
+
+body {
+     height: 100vh;
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+main {
+     position: relative;
+     width: 50vw;
+     height: 75vh;
+     background-color: #EEEEEE;
+     border-radius: 25px;
+}
+
+.slide {
+     position: absolute;
+     height: 100%;
+     width: 45%;
+     background-color: #9EDDFF;
+     display: flex;
+     justify-content: flex-end;
+     align-items: baseline;
+     flex-direction: column;
+     border-radius: 25px 50% 50% 25px;
+     z-index: 1000;
+}
+
+.slide > p {
+     width: 75%;
+     text-align: start;
+     font-size: 2em;
+     margin: 0 0 10px 15px;
+     font-size: 1.5em;
+}
+
+.slide > button {
+     margin: 0 0 20px 15px;
+     height: 40px;
+     width: 80px;
+     border-radius: 10px;
+     border: none;
+     background-color: #EEEEEE;
+}
+
+.login {
+     position: absolute;
+     width: 55%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     right: 0;
+}
+
+.login > form {
+     width: 75%;
+}
+
+.login > form > div {
+     margin-bottom: 10px;
+}
+
+.signup {
+     opacity: 0;
+}
